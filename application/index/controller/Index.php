@@ -26,8 +26,6 @@ class Index extends Controller
         $token = array(
             "user" => $username,
             "pwd" => $password,
-            "iat" => 1356999524,
-            "nbf" => 1357000000
         );
 
         $jwt = JWT::encode($token, $this->key);
