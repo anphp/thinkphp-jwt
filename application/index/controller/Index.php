@@ -23,6 +23,7 @@ class Index extends Controller
         $this->assign('username',$username);
         $this->assign('password',$password);
 
+//        需要返回给接口客户端的用户信息，这里只是凑个密码参数，实际使用不需要用密码验证机制
         $token = array(
             "user" => $username,
             "pwd" => $password,
