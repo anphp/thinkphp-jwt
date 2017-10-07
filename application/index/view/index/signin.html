@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录结果</title>
+</head>
+<body>
+
+<header>
+    <h1>恭喜你，登录成功！</h1>
+</header>
+<section>
+    <div>
+        您的账号信息：
+    </div>
+    <div>
+        <p>用户名：{$username}</p>
+        <p>密  码：{$password}</p>
+    </div>
+    <div>
+        <p>您的token</p>
+        <p style="background-color: red;color: yellow">{$token}</p>
+    </div>
+    <div>
+        <a href="{:url('detoken')}">去解析看看~</a>
+    </div>
+</section>
+</body>
+</html>
